@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laudenabhujyam</title>
+    <style>
+        #main{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+        #ghopghop{
+            padding: 10px ;
+            border: none;
+            border-radius: 10px;
+            font-family:fantasy;
+            background-color: black;
+            color: white;
+        }
+        #ghopghop:hover{
+            cursor: pointer;
+            background-color: rgb(233, 72, 211);
+        }
+        #video{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <video src="videoplayback.mp4" id="video"></video>
+         <button id="ghopghop" onclick="videoPlay();">Baby please click me💦💦</button>
+    </div>
+    <script>
+        function videoPlay(){
+            let video = document.getElementById("video");
+            let btn = document.getElementById("ghopghop");
+            btn.style.display = "none";
+            video.style.display = "block";
+            video.currentTime= 8;
+            video.play();
+        }
+    </script>
+</body>
+</html>
